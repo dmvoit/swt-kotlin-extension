@@ -11,5 +11,13 @@
 
     <artifactId>examples</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.github.dmvoit</groupId>
+            <artifactId>swt-extension</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+
 
 </project>
