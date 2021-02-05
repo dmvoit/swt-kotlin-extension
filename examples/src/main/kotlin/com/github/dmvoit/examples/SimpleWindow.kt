@@ -1,10 +1,7 @@
 package com.github.dmvoit.examples
 
-import com.github.dmvoit.extension.button
-import com.github.dmvoit.extension.readAndDispatch
-import com.github.dmvoit.extension.setCenter
+import com.github.dmvoit.extension.*
 import org.eclipse.swt.SWT
-import org.eclipse.swt.layout.FillLayout
 import org.eclipse.swt.widgets.Shell
 
 
@@ -12,8 +9,10 @@ fun main() {
     val shell = Shell().apply {
         setSize(100,100)
         setCenter()
-        layout = FillLayout()
+        fillLayout().vertical().setSpacing(5)
     }
+
+    shell.label("Text")
 
     shell.button("press me")
         .addListener(SWT.Selection) {
